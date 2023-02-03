@@ -13,7 +13,8 @@ public class CharSpawnTemp : MonoBehaviour
         public string bentuk;
         public List<Sprite> warna;
     }
-    public bentuk_warna[] rambut;
+    public bentuk_warna[] rambut_cowo;
+    public bentuk_warna[] rambut_cewe;
     public bentuk_warna[] muka_kulit;
 
     public List<Sprite> bentuk_mata = new List<Sprite>();
@@ -49,6 +50,16 @@ public class CharSpawnTemp : MonoBehaviour
 
     public void SpawnCharacter()
     {
+        //if (cowo)
+        //{
+
+        //}
+
+        //if (cewe)
+        //{
+
+        //}
+
         charGen.GenerateCharacter();
     }
 }

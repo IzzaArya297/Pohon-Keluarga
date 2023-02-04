@@ -11,6 +11,7 @@ public class ObjectMovement : MonoBehaviour
     public bool moveDown = false;
     public BoxCollider2D collide;
     public bool isPartner = true;
+    public int parameter;
 
     private void Awake() {
         collide = GetComponent<BoxCollider2D>();
@@ -23,6 +24,16 @@ public class ObjectMovement : MonoBehaviour
             GameManager.Instance.isClick = true;
             CharSpawnTemp.charSpawn.mainCard = GetComponent<CharCard>();
             CharSpawnTemp.charSpawn.currentCharacter = CharSpawnTemp.charSpawn.mainCard.charTraits;
+
+            if(CharSpawnTemp.charSpawn.mainCard.parentTraits == 5){
+                GameManager.Instance.score = (int) 1 * parameter;
+            }else if(CharSpawnTemp.charSpawn.mainCard.parentTraits == 4){
+                GameManager.Instance.score = (int) 0.8 * parameter;
+            }else if(CharSpawnTemp.charSpawn.mainCard.parentTraits == 3){
+                GameManager.Instance.score = (int) 0.6 * parameter;
+            }else{
+                GameManager.Instance.score = (int) 0.4 * parameter;
+            }
         }
     }
 

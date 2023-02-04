@@ -104,11 +104,20 @@ public class Music : MonoBehaviour
 
     public void PlayAnswer(int correct)
     {
-        //switch (correct)
-        //{
-        //    case 5:
-        //        SFX.PlayOneShot(combo_5);
-        //    else:
-        //}
+        switch (correct)
+        {
+            case 5:
+                SFX.PlayOneShot(combo_5);
+                break;
+            case 4:
+                SFX.PlayOneShot(combo_4);
+                break;
+            case 3:
+                SFX.PlayOneShot(combo_3);
+                break;
+            default:
+                SFX.PlayOneShot(salah);
+                break;
+        }
     }
 }

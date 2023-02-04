@@ -29,16 +29,20 @@ public class ObjectMovement : MonoBehaviour
 
             if(CharSpawnTemp.charSpawn.mainCard.parentTraits == 5){
                 GameManager.Instance.score += (int)(1 * a_parameter);
+                Music.Instance.PlayAnswer(5);
                 Debug.Log("5T");
                 Timer.TimerInstance.gameTime += 5;
             }else if(CharSpawnTemp.charSpawn.mainCard.parentTraits == 4){
                 GameManager.Instance.score += (int)(0.5 * a_parameter);
+                Music.Instance.PlayAnswer(4);
                 Debug.Log("4T");
             }else if(CharSpawnTemp.charSpawn.mainCard.parentTraits == 3){
                 GameManager.Instance.score += (int)(0.25 * a_parameter);
+                Music.Instance.PlayAnswer(3);
                 Debug.Log("3T");
             }else{
                 Debug.Log("SALAH");
+                Music.Instance.PlayAnswer(2);
                 Timer.TimerInstance.gameTime -= penaltyTime;
             }
         }

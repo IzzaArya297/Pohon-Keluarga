@@ -750,6 +750,8 @@ MonoBehaviour:
   moveDown: 0
   collide: {fileID: 0}
   isPartner: 1
+  a_parameter: 100
+  penaltyTime: 5
 --- !u!114 &971346678
 MonoBehaviour:
   m_ObjectHideFlags: 0

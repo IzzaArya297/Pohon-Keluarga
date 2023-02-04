@@ -5,13 +5,28 @@ using UnityEngine.UI;
 
 public class Timer : MonoBehaviour
 {
+    public static Timer TimerInstance { get; private set; }
     public Slider timerSlider;
     public Text timerText;
     public float gameTime;
     public GameObject pausePanel;
+    public bool isPause;
 
     private bool stopTimer;
     // Start is called before the first frame update
+    private void Awake() 
+    { 
+        // If there is an TimerInstance, and it's not me, delete myself.
+    
+        if (TimerInstance != null && TimerInstance != this) 
+        { 
+            Destroy(this); 
+        } 
+        else 
+        { 
+            TimerInstance = this; 
+        } 
+    }
     void Start()
     {
         stopTimer = false;
@@ -24,6 +39,17 @@ public class Timer : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
+        if(!isPause){
+            if(Input.GetKeyDown(KeyCode.Escape)){
+                PauseGame();
+                isPause = true;
+            }
+        }else{
+            if(Input.GetKeyDown(KeyCode.Escape)){
+                ResumeGame();
+                isPause = false;
+            }
+        }
         
     }
 
@@ -39,7 +65,7 @@ public class Timer : MonoBehaviour
 
             if(time <= 0){
                 stopTimer = true;
-
+                GameManager.Instance.GameOver();
             }
 
             if(stopTimer == false){

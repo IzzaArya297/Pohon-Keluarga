@@ -11,7 +11,8 @@ public class ObjectMovement : MonoBehaviour
     public bool moveDown = false;
     public BoxCollider2D collide;
     public bool isPartner = true;
-    public int parameter;
+    public int a_parameter;
+    public float penaltyTime = 5f;
 
     private void Awake() {
         collide = GetComponent<BoxCollider2D>();
@@ -27,13 +28,18 @@ public class ObjectMovement : MonoBehaviour
             CharSpawnTemp.charSpawn.currentCharacter = CharSpawnTemp.charSpawn.mainCard.charTraits;
 
             if(CharSpawnTemp.charSpawn.mainCard.parentTraits == 5){
-                GameManager.Instance.score = (int) 1 * parameter;
+                GameManager.Instance.score += (int)(1 * a_parameter);
+                Debug.Log("5T");
+                Timer.TimerInstance.gameTime += 5;
             }else if(CharSpawnTemp.charSpawn.mainCard.parentTraits == 4){
-                GameManager.Instance.score = (int) 0.8 * parameter;
+                GameManager.Instance.score += (int)(0.5 * a_parameter);
+                Debug.Log("4T");
             }else if(CharSpawnTemp.charSpawn.mainCard.parentTraits == 3){
-                GameManager.Instance.score = (int) 0.6 * parameter;
+                GameManager.Instance.score += (int)(0.25 * a_parameter);
+                Debug.Log("3T");
             }else{
-                GameManager.Instance.score = (int) 0.4 * parameter;
+                Debug.Log("SALAH");
+                Timer.TimerInstance.gameTime -= penaltyTime;
             }
         }
     }

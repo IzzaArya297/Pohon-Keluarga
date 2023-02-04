@@ -18,6 +18,7 @@ public class ObjectMovement : MonoBehaviour
 
     public void StartMove(){
         if(GameManager.Instance.isClick == false && !isPartner){
+            GetComponent<SpriteRenderer>().sortingOrder = 2;
             StartCoroutine(LerpPosition(offsetTargetPosition, duration));
             GameManager.Instance.isClick = true;
             CharSpawnTemp.charSpawn.mainCard = GetComponent<CharCard>();
@@ -30,10 +31,8 @@ public class ObjectMovement : MonoBehaviour
             StartCoroutine(CharSpawnTemp.charSpawn.NewLevel(gameObject.transform.position + offsetDown, duration+1));
             StartCoroutine(LerpPosition(gameObject.transform.position + offsetDown, duration));
             moveDown = false;
-            GameManager.Instance.isClick = false;
             CameraController.CameraInstance.MoveCamera(gameObject.transform.position + offsetDown);
             collide.enabled = false;
-                
         }
 
     }
@@ -50,5 +49,6 @@ public class ObjectMovement : MonoBehaviour
         }
         transform.position = target;
         moveDown = true;
+        GameManager.Instance.isClick = false;
     }
 }

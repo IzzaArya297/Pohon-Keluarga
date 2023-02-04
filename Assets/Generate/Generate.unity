@@ -497,10 +497,6 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
-    - target: {fileID: 971346678, guid: 0b985083d809509489fe7405c6d65d8e, type: 3}
-      propertyPath: firstCard
-      value: 1
-      objectReference: {fileID: 0}
     - target: {fileID: 6342524973845092644, guid: 0b985083d809509489fe7405c6d65d8e, type: 3}
       propertyPath: m_Name
       value: CharCard
@@ -508,18 +504,6 @@ PrefabInstance:
     - target: {fileID: 6342524973845092646, guid: 0b985083d809509489fe7405c6d65d8e, type: 3}
       propertyPath: m_RootOrder
       value: 4
-      objectReference: {fileID: 0}
-    - target: {fileID: 6342524973845092646, guid: 0b985083d809509489fe7405c6d65d8e, type: 3}
-      propertyPath: m_LocalScale.x
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 6342524973845092646, guid: 0b985083d809509489fe7405c6d65d8e, type: 3}
-      propertyPath: m_LocalScale.y
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 6342524973845092646, guid: 0b985083d809509489fe7405c6d65d8e, type: 3}
-      propertyPath: m_LocalScale.z
-      value: 0.9
       objectReference: {fileID: 0}
     - target: {fileID: 6342524973845092646, guid: 0b985083d809509489fe7405c6d65d8e, type: 3}
       propertyPath: m_LocalPosition.x
@@ -933,7 +917,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   targetObject:
   - {fileID: 971346676}
-  duration: 2
+  duration: 0.95
   move: 0
 --- !u!81 &1465859570
 AudioListener:
@@ -1275,8 +1259,12 @@ MonoBehaviour:
   - {fileID: -2413806693520163455, guid: bdfdc0eb1003b274fb2b1b53187f908c, type: 3}
   - {fileID: 2747690628134850419, guid: 2fe7634df66d9134385d96f9da3d9aa6, type: 3}
   - {fileID: -9095717837082945937, guid: f360b6666b5c05e499ce3a35c321ea5b, type: 3}
-  baju_cowo: []
-  baju_cewe: []
+  baju_cowo:
+  - {fileID: 0}
+  - {fileID: 0}
+  baju_cewe:
+  - {fileID: 0}
+  - {fileID: 0}
   currentCharacter: 
   currentPartner: 
   cardChild: []

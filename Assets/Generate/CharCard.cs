@@ -7,9 +7,7 @@ public class CharCard : MonoBehaviour
 
     public bool isPartner = false;
 
-    
-
-    public List<Sprite> bentuk_mata = new List<Sprite>();
+    public List<int> charTraits;
 
     public SpriteRenderer sprite_rambut = new SpriteRenderer();
     public SpriteRenderer sprite_kulit = new SpriteRenderer();
@@ -27,7 +25,7 @@ public class CharCard : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-        FillSprite();
+        //FillSprite();
     }
 
     // Update is called once per frame
@@ -52,7 +50,7 @@ public class CharCard : MonoBehaviour
 
         else
         {
-            spriteList = charSpawn.GetKidChar(parentTraits);
+            spriteList = charSpawn.GetKidChar(GetComponent<CharCard>());
         }
 
         sprite_rambut.sprite = spriteList[0];

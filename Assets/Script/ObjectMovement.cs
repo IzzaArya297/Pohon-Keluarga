@@ -5,31 +5,33 @@ using UnityEngine;
 public class ObjectMovement : MonoBehaviour
 {
     
-    public Transform targetPosition;
     public Vector3 offsetTargetPosition;
     public Vector3 offsetDown;
     public float duration;
     public bool moveDown = false;
     public BoxCollider2D collide;
+    public bool isPartner = true;
 
     private void Awake() {
         collide = GetComponent<BoxCollider2D>();
     }
 
     public void StartMove(){
-        if(GameManager.Instance.isClick == false){
-            StartCoroutine(LerpPosition(targetPosition.position, duration));
+        if(GameManager.Instance.isClick == false && !isPartner){
+            StartCoroutine(LerpPosition(offsetTargetPosition, duration));
             GameManager.Instance.isClick = true;
+            CharSpawnTemp.charSpawn.mainCard = GetComponent<CharCard>();
+            CharSpawnTemp.charSpawn.currentCharacter = CharSpawnTemp.charSpawn.mainCard.charTraits;
         }
     }
 
     public void MoveDown(){
         if(moveDown == true){
+            StartCoroutine(CharSpawnTemp.charSpawn.NewLevel(gameObject.transform.position + offsetDown, duration+1));
             StartCoroutine(LerpPosition(gameObject.transform.position + offsetDown, duration));
             moveDown = false;
             GameManager.Instance.isClick = false;
             CameraController.CameraInstance.MoveCamera(gameObject.transform.position + offsetDown);
-            
             collide.enabled = false;
                 
         }

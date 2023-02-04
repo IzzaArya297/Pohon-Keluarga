@@ -25,7 +25,7 @@ public class CameraController : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-        transform.position = new Vector3(targetObject[0].position.x + 6, targetObject[0].position.y - 2, transform.position.z);
+        transform.position = new Vector3(targetObject[0].position.x + (float)7.5, targetObject[0].position.y - (float)2.05, transform.position.z);
     }
 
     // Update is called once per frame
@@ -42,7 +42,7 @@ public class CameraController : MonoBehaviour
     IEnumerator LerpPosition(Vector3 targetPosition, float duration)
     {
         Vector3 startPosition = transform.position;
-        Vector3 target = new Vector3(targetPosition.x + 6, targetPosition.y - 2, transform.position.z);
+        Vector3 target = new Vector3(targetPosition.x + (float)7.5, targetPosition.y - (float)2.05, transform.position.z);
         float time = 0;
         while (time < duration)
         {

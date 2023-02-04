@@ -29,12 +29,26 @@ public class CharSpawnTemp : MonoBehaviour
 
     public List<int> currentCharacter = new List<int>();
     public List<int> currentPartner = new List<int>();
+
+    public List<GameObject> cardChild;
+
     public int gender = Character.Cowo;
 
     public int[] same_traits = { 5, 4, 3, 2, 2 };
 
     public GameObject charCard;
-    public CharCard firstCard;
+
+    public CharCard mainCard;
+
+    public GameObject hirarki;
+    public GameObject answerCard;
+
+    Vector3 mainCardPos;
+
+    public Vector3 hirarkiOffset;
+    public Vector3 parentPosOffset;
+    public Vector3 answerPosOffset;
+    public Vector3[] chileChoiceOffset;
 
     public static CharSpawnTemp charSpawn { get; private set; }
     private void Awake()
@@ -58,12 +72,38 @@ public class CharSpawnTemp : MonoBehaviour
 
         gender = UnityEngine.Random.Range(0, 2) == 0 ? Character.Cowo : Character.Cewe;
 
+        mainCardPos = mainCard.transform.position;
+        SpawnPartner();
+        SpawnKid();
+        SpawnObject();
     }
 
     // Update is called once per frame
     void Update()
     {
 
+    }
+
+    void SpawnObject()
+    {
+        Instantiate(hirarki, mainCardPos + hirarkiOffset, Quaternion.identity);
+        Instantiate(answerCard, mainCardPos + answerPosOffset, Quaternion.identity);
+    }
+
+    public IEnumerator NewLevel(Vector3 _mainCardPos, float duration=3)
+    {
+        cardChild.Remove(mainCard.gameObject);
+        List<GameObject> temp = new List<GameObject>(cardChild);
+        mainCardPos = _mainCardPos;
+
+        SpawnPartner();
+        SpawnKid();
+        SpawnObject();
+        yield return new WaitForSeconds(duration);
+        foreach (GameObject go in temp)
+        {
+            Destroy(go);
+        }
     }
 
     public Sprite[] GetCharSprite(List<int> data=null, int _gender=-1)
@@ -94,18 +134,29 @@ public class CharSpawnTemp : MonoBehaviour
 
     public void SpawnPartner()
     {
-        GameObject new_card = Instantiate(charCard);
+        GameObject new_card = Instantiate(charCard, mainCardPos + parentPosOffset, Quaternion.identity);
+        cardChild.Add(new_card);
         CharCard new_charCard = new_card.GetComponent<CharCard>();
         new_charCard.isPartner = true;
     }
 
     public void SpawnKid()
     {
+        int i = 0;
         foreach(int trait in same_traits)
         {
-            GameObject new_card = Instantiate(charCard);
+            GameObject new_card = Instantiate(charCard, mainCardPos + chileChoiceOffset[i], Quaternion.identity);
+            cardChild.Add(new_card);
             CharCard new_charCard = new_card.GetComponent<CharCard>();
+            ObjectMovement new_object = new_card.GetComponent<ObjectMovement>();
             new_charCard.parentTraits = trait;
+            new_object.isPartner = false;
+            new_object.offsetTargetPosition = mainCardPos + answerPosOffset;
+            if(i == 4)
+            {
+                new_card.GetComponent<SpriteRenderer>().sortingOrder = 1;
+            }
+            i++;
         }
     }
 
@@ -115,8 +166,9 @@ public class CharSpawnTemp : MonoBehaviour
         return GetCharSprite(charGen.GeneratePartner(currentCharacter), gender == Character.Cowo ? Character.Cewe : Character.Cowo);
     }
 
-    public Sprite[]  GetKidChar(int same_traits)
+    public Sprite[]  GetKidChar(CharCard charCard)
     {
-        return GetCharSprite(charGen.GenerateKid(currentCharacter, currentPartner, same_traits), UnityEngine.Random.Range(0, 2));
+        charCard.charTraits = charGen.GenerateKid(currentCharacter, currentPartner, charCard.parentTraits);
+        return GetCharSprite(charCard.charTraits, UnityEngine.Random.Range(0, 2));
     }
 }

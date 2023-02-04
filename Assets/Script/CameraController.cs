@@ -4,13 +4,28 @@ using UnityEngine;
 
 public class CameraController : MonoBehaviour
 {
+    public static CameraController CameraInstance { get; private set; }
     public Transform[] targetObject;
     [SerializeField]
     private float duration = 2f;
+    public bool move = false;
+    private void Awake() 
+    { 
+        // If there is an CameraInstance, and it's not me, delete myself.
+    
+        if (CameraInstance != null && CameraInstance != this) 
+        { 
+           Destroy(this); 
+        } 
+        else 
+        { 
+            CameraInstance = this; 
+        } 
+    }
     // Start is called before the first frame update
     void Start()
     {
-        transform.position = new Vector3(targetObject[0].position.x, targetObject[0].position.y, transform.position.z);
+        transform.position = new Vector3(targetObject[0].position.x + 6, targetObject[0].position.y - 2, transform.position.z);
     }
 
     // Update is called once per frame
@@ -19,15 +34,15 @@ public class CameraController : MonoBehaviour
         
     }
 
-    public void MoveCamera(){
+    public void MoveCamera(Vector3 targetPosition){
         
-        StartCoroutine(LerpPosition(targetObject[1].position, duration));
+        StartCoroutine(LerpPosition(targetPosition, duration));
     }
 
     IEnumerator LerpPosition(Vector3 targetPosition, float duration)
     {
         Vector3 startPosition = transform.position;
-        Vector3 target = new Vector3(targetPosition.x, targetPosition.y, transform.position.z);
+        Vector3 target = new Vector3(targetPosition.x + 6, targetPosition.y - 2, transform.position.z);
         float time = 0;
         while (time < duration)
         {

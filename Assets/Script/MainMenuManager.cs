@@ -10,7 +10,7 @@ public class MainMenuManager : MonoBehaviour
     //public GameObject creditPanel;
     void Start()
     {
-        
+        Time.timeScale = 1;
     }
 
     // Update is called once per frame
@@ -19,9 +19,9 @@ public class MainMenuManager : MonoBehaviour
         
     }
 
-    public void StartBtn(string targetScene)
+    public void StartBtn(int index)
     {
-        SceneManager.LoadScene(targetScene);
+        SceneManager.LoadScene(index);
     }
 
     public void ExitGame()

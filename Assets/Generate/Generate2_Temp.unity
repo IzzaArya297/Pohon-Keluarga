@@ -886,6 +886,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   BGM: {fileID: 1122521564}
+  SFX: {fileID: 0}
   BGM_Gameplay:
   - {fileID: 8300000, guid: 744a549f9bb880c44bf1e84742ab20e8, type: 3}
   - {fileID: 8300000, guid: 86d3cd4c2cbda454583c63d76eaed3c0, type: 3}
@@ -895,6 +896,7 @@ MonoBehaviour:
   timer: 0
   persen_start: 30
   persen_mid: 80
+  isGame: 1
 --- !u!82 &1122521564
 AudioSource:
   m_ObjectHideFlags: 0

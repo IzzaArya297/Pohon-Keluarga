@@ -7,8 +7,15 @@ public class Music : MonoBehaviour
 {
 
     public AudioSource BGM;
+    public AudioSource SFX;
 
     public AudioClip[] BGM_Gameplay;
+
+    public AudioClip combo_5;
+    public AudioClip combo_4;
+    public AudioClip combo_3;
+    public AudioClip salah;
+    public AudioClip click;
 
     public float game_timer = 90;
 
@@ -17,10 +24,29 @@ public class Music : MonoBehaviour
     public float persen_start = 30;
     public float persen_mid = 80;
 
+
+    public bool isGame = false;
+    public static Music Instance { get; private set; }
+
+    private void Awake()
+    {
+        // If there is an CameraInstance, and it's not me, delete myself.
+
+        if (Instance != null && Instance != this)
+        {
+            Destroy(this);
+        }
+        else
+        {
+            Instance = this;
+        }
+    }
+
     // Start is called before the first frame update
     void Start()
     {
-        StartCoroutine(PlayBGM(game_timer));
+        if (isGame)
+            StartCoroutine(PlayBGM(game_timer));
     }
 
     // Update is called once per frame
@@ -69,5 +95,20 @@ public class Music : MonoBehaviour
         BGM.loop = false;
 
         BGM.Stop();
+    }
+
+    public void PlayClick()
+    {
+        SFX.PlayOneShot(click);
+    }
+
+    public void PlayAnswer(int correct)
+    {
+        //switch (correct)
+        //{
+        //    case 5:
+        //        SFX.PlayOneShot(combo_5);
+        //    else:
+        //}
     }
 }

@@ -1,0 +1,321 @@
+{
+    "info": {
+        "title": "pedal point",
+        "author": "devdogg"
+    },
+    
+    "gain": {
+    	"master": 1.6,
+    	"drop": 1,
+    	"move": 1.4,
+    	"clear": 1.7,
+    	"combo": 1.6,
+    	"loop": 0.8
+    },
+    
+ "drop_groups": {
+        "drop": "drop.ogg"
+    },
+    
+    "move_groups": {
+        "A": [
+            "move_A_0.ogg",
+            "move_A_1.ogg",
+            "move_A_2.ogg"
+        ],
+        "A-": [
+            "move_A-_0.ogg",
+            "move_A-_1.ogg"
+        ],
+        "B7": [
+            "move_B7_0.ogg",
+            "move_B7_1.ogg"
+        ],
+        "Bb": [
+            "move_Bb_0.ogg",
+            "move_Bb_1.ogg"
+        ],
+        "Bb-": [
+            "move_Bb-_0.ogg",
+            "move_Bb-_1.ogg"
+        ],
+        "C7": [
+            "move_C7_0.ogg",
+            "move_C7_1.ogg"
+        ],
+        "D#0": [
+            "move_D#0_0.ogg",
+            "move_D#0_1.ogg",
+            "move_D#0_2.ogg"
+        ],
+         "D7": [
+            "move_D7_0.ogg",
+            "move_D7_1.ogg"
+        ],
+         "Db": [
+            "move_Db_0.ogg",
+            "move_Db_1.ogg",
+            "move_Db_2.ogg",
+            "move_Db_3.ogg",
+            "move_Db_4.ogg",
+            "move_Db_5.ogg"
+        ],
+        "Db-": [
+            "move_Db-_0.ogg",
+            "move_Db-_1.ogg",
+            "move_Db-_2.ogg"
+        ],
+        "Db1": [
+            "move_Db1_0.ogg",
+            "move_Db1_1.ogg",
+            "move_Db1_2.ogg"
+        ],
+        "E": [
+            "move_E_0.ogg",
+            "move_E_1.ogg",
+            "move_E_2.ogg",
+            "move_E_3.ogg"
+        ],
+        "Eb7": [
+            "move_Eb7_0.ogg",
+            "move_Eb7_1.ogg"
+        ],
+        "F#-": [
+            "move_F#-_0.ogg",
+            "move_F#-_1.ogg"
+        ],
+        "F": [
+            "move_F_0.ogg",
+            "move_F_1.ogg"
+        ],
+        "G#7": [
+            "move_G#7_0.ogg",
+            "move_G#7_1.ogg",
+            "move_G#7_2.ogg"
+        ],
+        "G-": [
+            "move_G-_0.ogg",
+            "move_G-_1.ogg"
+        ]
+    },
+    
+    "clear_groups": {
+        "A": [
+            "clear_A_0.ogg",
+            "clear_A_1.ogg",
+            "clear_A_2.ogg"
+        ],
+        "B7": [
+            "clear_B7_0.ogg",
+            "clear_B7_1.ogg",
+            "clear_B7_2.ogg"
+        ],
+        "Bb": [
+            "clear_Bb_0.ogg",
+            "clear_Bb_1.ogg",
+            "clear_Bb_2.ogg"
+        ],
+        "C#-": [
+            "clear_C#-_0.ogg",
+            "clear_C#-_1.ogg",
+            "clear_C#-_2.ogg"
+        ],
+        "C7": [
+            "clear_C7_0.ogg",
+            "clear_C7_1.ogg",
+            "clear_C7_2.ogg"
+        ],
+        "D7": [
+            "clear_D7_0.ogg",
+            "clear_D7_1.ogg",
+            "clear_D7_2.ogg"
+        ],
+        "Db": [
+            "clear_Db_0.ogg",
+            "clear_Db_1.ogg",
+            "clear_Db_2.ogg"
+        ],
+        "Db-": [
+            "clear_Db-_0.ogg",
+            "clear_Db-_1.ogg",
+            "clear_Db-_2.ogg"
+        ],
+        "Db1": [
+            "clear_Db1_0.ogg",
+            "clear_Db1_1.ogg",
+            "clear_Db1_2.ogg"
+        ],
+        "E": [
+            "clear_E_0.ogg",
+            "clear_E_1.ogg",
+            "clear_E_2.ogg"
+        ],
+        "Eb7": [
+            "clear_Eb7_0.ogg",
+            "clear_Eb7_1.ogg",
+            "clear_Eb7_2.ogg"
+        ],
+        "F": [
+            "clear_F_0.ogg",
+            "clear_F_1.ogg",
+            "clear_F_2.ogg"
+        ],
+        "G#7": [
+            "clear_G#7_0.ogg",
+            "clear_G#7_1.ogg",
+            "clear_G#7_2.ogg"
+        ]
+     },
+     
+        "combo_groups": {
+    	"combo": [
+    		"combo_0.ogg",
+    		"combo_1.ogg",
+    		"combo_2.ogg"
+    	]
+    },
+    
+    "progressions": {
+        "prog_E": [
+            ["drop", "E", "E", "combo"]
+                    ],
+        "prog_Bb": [
+            ["drop", "Bb", "Bb", "combo"],
+            ["drop", "Bb", "Bb", "combo"],
+            ["drop", "Bb-", "Eb7", "combo"],
+            ["drop", "Eb7", "Eb7", "combo"],
+            ["drop", "A-", "D7", "combo"],
+            ["drop", "A-", "D7", "combo"],
+            ["drop", "D7", "D7", "combo"],
+            ["drop", "D7", "D7", "combo"],
+            ["drop", "G-", "C7", "combo"],
+            ["drop", "G-", "C7", "combo"],
+            ["drop", "C7", "C7", "combo"],
+            ["drop", "C7", "C7", "combo"],
+            ["drop", "F", "F", "combo"],
+            ["drop", "F", "F", "combo"],
+            ["drop", "F#-", "B7", "combo"],
+            ["drop", "B7", "B7", "combo"]
+                    ],
+        "prog_C#-": [
+            ["drop", "D#0", "G#7", "combo"],
+            ["drop", "G#7", "G#7", "combo"],
+            ["drop", "E", "C#-", "combo"],
+            ["drop", "E", "C#-", "combo"],
+            ["drop", "F#-", "C#-", "combo"],
+            ["drop", "B7", "C#-", "combo"],
+            ["drop", "E", "C#-", "combo"],
+            ["drop", "E", "C#-", "combo"]
+                    ],
+        "prog_D#0": [
+            ["drop", "D#0", "G#7", "combo"],
+            ["drop", "G#7", "G#7", "combo"]
+                    ],
+        "prog_Db": [
+            ["drop", "Db", "Db", "combo"]
+                    ],
+        "prog_Db1": [
+            ["drop", "Db1", "Db1", "combo"],
+            ["drop", "A", "A", "combo"],
+            ["drop", "Db-", "Db-", "combo"],
+            ["drop", "Db1", "Db1", "combo"]
+                    ]
+    },
+    
+"loops": {
+        "start": {
+            "audio": "start0.ogg",
+            "bpm": 131,
+            "length": 8,
+            "progression": "prog_E",
+            "next": "start1"
+        },
+        "start1": {
+            "audio": "start1.ogg",
+            "bpm": 131,
+            "length": 16,
+            "progression": "prog_E",
+            "next": "start11"
+        },
+         "start11": {
+            "audio": "start1.ogg",
+            "bpm": 131,
+            "length": 16,
+            "progression": "prog_E",
+            "next": "start2"
+        },
+         "start2": {
+            "audio": "start2.ogg",
+            "bpm": 131,
+            "length": 32,
+            "progression": "prog_Bb",
+            "next": "start1"
+        },        
+         "middle": {
+            "audio": "middle0.ogg",
+            "bpm": 131,
+            "length": 16,
+            "progression": "prog_E",
+            "next": "middle01"
+        },
+        "middle01": {
+            "audio": "middle0.ogg",
+            "bpm": 131,
+            "length": 16,
+            "progression": "prog_E",
+            "next": "middle1"
+        },
+         "middle1": {
+            "audio": "middle1.ogg",
+            "bpm": 131,
+            "length": 16,
+            "progression": "prog_C#-",
+            "next": "middle11"
+        },
+         "middle11": {
+            "audio": "middle1.ogg",
+            "bpm": 131,
+            "length": 16,
+            "progression": "prog_C#-",
+            "next": "middle"
+        },
+        "outro": {
+            "audio": "outro0.ogg",
+            "bpm": 151,
+            "length": 4,
+            "progression": "prog_D#0",
+            "next": "outro1"
+        },
+        "outro1": {
+            "audio": "outro1.ogg",
+            "bpm": 151,
+            "length": 16,
+            "progression": "prog_Db",
+            "next": "outro11"
+        },
+         "outro11": {
+            "audio": "outro1.ogg",
+            "bpm": 151,
+            "length": 16,
+            "progression": "prog_Db",
+            "next": "outro2"
+        },
+        "outro2": {
+            "audio": "outro2.ogg",
+            "bpm": 151,
+            "length": 16,
+            "progression": "prog_Db1",
+            "next": "outro22"
+        },
+        "outro22": {
+            "audio": "outro2.ogg",
+            "bpm": 151,
+            "length": 16,
+            "progression": "prog_Db1",
+            "next": "outro1"
+        },
+"end" :{
+        	"audio": "end.ogg"
+        }
+        }
+    }

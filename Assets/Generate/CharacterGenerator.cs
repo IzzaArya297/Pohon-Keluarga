@@ -23,43 +23,43 @@ public class CharacterGenerator : MonoBehaviour
 
 
         // Log each element one at a time
-        List<int> character = GenerateCharacter();
-        Debug.Log("--------------");
+        //List<int> character = GenerateCharacter();
+        //Debug.Log("--------------");
 
-        List<int> partner = GeneratePartner(character);
+        //List<int> partner = GeneratePartner(character);
 
-        List<int> kid_5 = GenerateKid(character, partner, 5);
-        List<int> kid_4 = GenerateKid(character, partner, 4);
-        List<int> kid_3 = GenerateKid(character, partner, 3);
-        List<int> kid_2 = GenerateKid(character, partner, 2);
-        List<int> kid_2_1 = GenerateKid(character, partner, 2);
-        int i = 0;
+        //List<int> kid_5 = GenerateKid(character, partner, 5);
+        //List<int> kid_4 = GenerateKid(character, partner, 4);
+        //List<int> kid_3 = GenerateKid(character, partner, 3);
+        //List<int> kid_2 = GenerateKid(character, partner, 2);
+        //List<int> kid_2_1 = GenerateKid(character, partner, 2);
+        //int i = 0;
 
-        string dads = "Dad: ";
-        string moms = "mom: ";
-        string kids_5 = "kid-5: ";
-        string kids_4 = "kid-4: ";
-        string kids_3 = "kid-3: ";
-        string kids_2 = "kid-2: ";
-        string kids_2_1 = "kid-2: ";
-        foreach (var item in kid_5)
-        {
-            kids_5 += item.ToString() + ", ";
-            kids_4 += kid_4[i].ToString() + ", ";
-            kids_3 += kid_3[i].ToString() + ", ";
-            kids_2 += kid_2[i].ToString() + ", ";
-            kids_2_1 += kid_2_1[i].ToString() + ", ";
-            dads += character[i].ToString() + ", ";
-            moms += partner[i].ToString() + ", ";
-            i++;
-        }
-        Debug.Log(dads);
-        Debug.Log(moms);
-        Debug.Log(kids_5);
-        Debug.Log(kids_4);
-        Debug.Log(kids_3);
-        Debug.Log(kids_2);
-        Debug.Log(kids_2_1);
+        //string dads = "Dad: ";
+        //string moms = "mom: ";
+        //string kids_5 = "kid-5: ";
+        //string kids_4 = "kid-4: ";
+        //string kids_3 = "kid-3: ";
+        //string kids_2 = "kid-2: ";
+        //string kids_2_1 = "kid-2: ";
+        //foreach (var item in kid_5)
+        //{
+        //    kids_5 += item.ToString() + ", ";
+        //    kids_4 += kid_4[i].ToString() + ", ";
+        //    kids_3 += kid_3[i].ToString() + ", ";
+        //    kids_2 += kid_2[i].ToString() + ", ";
+        //    kids_2_1 += kid_2_1[i].ToString() + ", ";
+        //    dads += character[i].ToString() + ", ";
+        //    moms += partner[i].ToString() + ", ";
+        //    i++;
+        //}
+        //Debug.Log(dads);
+        //Debug.Log(moms);
+        //Debug.Log(kids_5);
+        //Debug.Log(kids_4);
+        //Debug.Log(kids_3);
+        //Debug.Log(kids_2);
+        //Debug.Log(kids_2_1);
 
     }
     

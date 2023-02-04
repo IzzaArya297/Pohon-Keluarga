@@ -4,15 +4,78 @@ using UnityEngine;
 
 public class Background : MonoBehaviour
 {
-    // Start is called before the first frame update
+    private Vector3 backPos; public float width = 14.22f; public float height = 0f; private float X; private float Y;
+
+
+    Renderer m_Renderer;
+
+    public float speed = 1.0f;
+    public bool moveRight = false;  // scroll to left by default.
+    private GameObject dupeSprite;
+
+    private float spriteWidth;
+    private float initPos;
+    // Use this for initialization
     void Start()
     {
-        
+        initPos = transform.position.y;
+        spriteWidth = this.GetComponent<SpriteRenderer>().bounds.size.x;
+        m_Renderer = GetComponent<Renderer>();
     }
 
+    bool spawn = false;
+
     // Update is called once per frame
-    void Update()
+    //void Update()
+    //{
+    //    if (m_Renderer.isVisible)
+    //    {
+    //        Debug.Log("Object is visible");
+    //    }
+    //    else Debug.Log("Object is no longer visible");
+    //    if(!spawn)
+    //        StartCoroutine(OnBecameInvisible());
+    //}
+
+    private void Update()
     {
-        
+        if (moveRight)
+        {
+            float currentPos = transform.position.y;
+            if (currentPos - initPos > spriteWidth)
+            {
+                // if distance traversed is greater than width of this sprite,
+                // then reposition to original position.
+                transform.position = new Vector3(transform.position.x, initPos + speed, transform.position.z);
+            }
+            else
+                transform.position = new Vector3(transform.position.x, currentPos + speed, transform.position.z);
+        }
+        else
+        {
+            float currentPos = transform.position.y;
+            if (initPos - currentPos > spriteWidth)
+            {
+                transform.position = new Vector3(transform.position.x, initPos - speed, transform.position.z);
+            }
+            else
+                transform.position = new Vector3(transform.position.x, currentPos - speed, transform.position.z);
+        }
+    }
+
+    IEnumerator OnBecameInvisible()
+    {
+        //calculate current position'
+        spawn = true;
+        backPos = gameObject.transform.position;
+        //calculate new position
+        print(backPos);
+        X = backPos.x + width * 2;
+        Y = backPos.y + height * 2;
+        //move to new position when invisible
+        gameObject.transform.position = new Vector3(X, Y, 0f);
+        yield return new WaitForEndOfFrame();
+        yield return new WaitForEndOfFrame();
+        spawn = false;
     }
 }

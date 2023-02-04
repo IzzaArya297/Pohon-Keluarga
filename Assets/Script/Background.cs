@@ -62,20 +62,4 @@ public class Background : MonoBehaviour
                 transform.position = new Vector3(transform.position.x, currentPos - speed, transform.position.z);
         }
     }
-
-    IEnumerator OnBecameInvisible()
-    {
-        //calculate current position'
-        spawn = true;
-        backPos = gameObject.transform.position;
-        //calculate new position
-        print(backPos);
-        X = backPos.x + width * 2;
-        Y = backPos.y + height * 2;
-        //move to new position when invisible
-        gameObject.transform.position = new Vector3(X, Y, 0f);
-        yield return new WaitForEndOfFrame();
-        yield return new WaitForEndOfFrame();
-        spawn = false;
-    }
 }

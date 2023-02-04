@@ -163,16 +163,19 @@ public class CharSpawnTemp : MonoBehaviour
     public void SpawnKid()
     {
         int i = 0;
-        foreach(int trait in same_traits)
+        int[] position = new int[] { 0, 1, 2, 3, 4 };
+        position = Shuffle(position);
+
+        foreach (int trait in same_traits)
         {
-            GameObject new_card = Instantiate(charCard, mainCardPos + chileChoiceOffset[i], Quaternion.identity);
+            GameObject new_card = Instantiate(charCard, mainCardPos + chileChoiceOffset[position[i]], Quaternion.identity);
             cardChild.Add(new_card);
             CharCard new_charCard = new_card.GetComponent<CharCard>();
             ObjectMovement new_object = new_card.GetComponent<ObjectMovement>();
             new_charCard.parentTraits = trait;
             new_object.isPartner = false;
             new_object.offsetTargetPosition = mainCardPos + answerPosOffset;
-            if(i == 4)
+            if(position[i] == 4)
             {
                 new_charCard.sortingFix(21);
             }
@@ -190,5 +193,17 @@ public class CharSpawnTemp : MonoBehaviour
     {
         charCard.charTraits = charGen.GenerateKid(currentCharacter, currentPartner, charCard.parentTraits);
         return GetCharSprite(charCard.charTraits, UnityEngine.Random.Range(0, 2));
+    }
+
+    int[] Shuffle(int[] array)
+    {
+        for (int i = 0; i < array.Length - 1; i++)
+        {
+            int rnd = UnityEngine.Random.Range(i, array.Length);
+            int tempGO = array[rnd];
+            array[rnd] = array[i];
+            array[i] = tempGO;
+        }
+        return array;
     }
 }

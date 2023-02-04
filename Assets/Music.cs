@@ -34,10 +34,8 @@ public class Music : MonoBehaviour
         float length = BGM_Gameplay[0].length;
         BGM.clip = BGM_Gameplay[0];
         BGM.Play();
-        Debug.Log(length);
         float time_start = ((int)((game_timer * persen_start / 100) / length) + 1) * length;
 
-        Debug.Log(time_start);
         while (timer < time_start)
         {
             yield return new WaitForEndOfFrame();
@@ -49,7 +47,6 @@ public class Music : MonoBehaviour
         BGM.Play();
 
         float time_end = (((int)(((game_timer * persen_mid / 100) - time_start) / length) + 1) * length) + time_start;
-        Debug.Log(time_end);
         while (timer < time_end)
         {
             yield return new WaitForEndOfFrame();

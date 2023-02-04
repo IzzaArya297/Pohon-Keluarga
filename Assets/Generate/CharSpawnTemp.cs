@@ -14,13 +14,29 @@ public class CharSpawnTemp : MonoBehaviour
     public CharacterGenerator charGen;
 
     [Serializable]
+    public struct Rambut
+    {
+        public Sprite depan;
+        public Sprite belakang;
+        public Sprite mid;
+    }
+
+    [Serializable]
+    public struct bentuk_warna_rambut
+    {
+        public string bentuk;
+        public List<Rambut> warna;
+    }
+
+    [Serializable]
     public struct bentuk_warna
     {
         public string bentuk;
         public List<Sprite> warna;
     }
-    public bentuk_warna[] rambut_cowo;
-    public bentuk_warna[] rambut_cewe;
+
+    public bentuk_warna_rambut[] rambut_cowo;
+    public bentuk_warna_rambut[] rambut_cewe;
     public bentuk_warna[] muka_kulit;
 
     public List<Sprite> bentuk_mata = new List<Sprite>();
@@ -117,17 +133,21 @@ public class CharSpawnTemp : MonoBehaviour
 
         if(gender == Character.Cowo)
         {
-            charSprite[0] = rambut_cowo[data[0]].warna[data[1]];
+            charSprite[0] = rambut_cowo[data[0]].warna[data[1]].depan;
+            charSprite[1] = rambut_cowo[data[0]].warna[data[1]].belakang;
+            charSprite[2] = rambut_cowo[data[0]].warna[data[1]].mid;
             charSprite[3] = baju_cowo[UnityEngine.Random.Range(0, baju_cowo.Count)];
         }
         else
         {
-            charSprite[0] = rambut_cewe[data[0]].warna[data[1]];
+            charSprite[0] = rambut_cewe[data[0]].warna[data[1]].depan;
+            charSprite[1] = rambut_cewe[data[0]].warna[data[1]].belakang;
+            charSprite[2] = rambut_cewe[data[0]].warna[data[1]].mid;
             charSprite[3] = baju_cewe[UnityEngine.Random.Range(0, baju_cewe.Count)];
         }
 
-        charSprite[1] = muka_kulit[data[3]].warna[data[2]];
-        charSprite[2] = bentuk_mata[data[4]];
+        charSprite[4] = muka_kulit[data[3]].warna[data[2]];
+        charSprite[5] = bentuk_mata[data[4]];
 
         return charSprite;
     }
@@ -154,7 +174,7 @@ public class CharSpawnTemp : MonoBehaviour
             new_object.offsetTargetPosition = mainCardPos + answerPosOffset;
             if(i == 4)
             {
-                new_card.GetComponent<SpriteRenderer>().sortingOrder = 1;
+                new_charCard.sortingFix(21);
             }
             i++;
         }

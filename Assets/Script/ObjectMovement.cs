@@ -18,10 +18,11 @@ public class ObjectMovement : MonoBehaviour
 
     public void StartMove(){
         if(GameManager.Instance.isClick == false && !isPartner){
-            GetComponent<SpriteRenderer>().sortingOrder = 2;
+            
             StartCoroutine(LerpPosition(offsetTargetPosition, duration));
             GameManager.Instance.isClick = true;
             CharSpawnTemp.charSpawn.mainCard = GetComponent<CharCard>();
+            CharSpawnTemp.charSpawn.mainCard.sortingFix(31);
             CharSpawnTemp.charSpawn.currentCharacter = CharSpawnTemp.charSpawn.mainCard.charTraits;
         }
     }
@@ -33,11 +34,12 @@ public class ObjectMovement : MonoBehaviour
             moveDown = false;
             CameraController.CameraInstance.MoveCamera(gameObject.transform.position + offsetDown);
             collide.enabled = false;
+            GameManager.Instance.isClick = false;
         }
-
     }
     IEnumerator LerpPosition(Vector3 targetPosition, float duration)
     {
+
         Vector3 startPosition = transform.position;
         Vector3 target = new Vector3(targetPosition.x, targetPosition.y, transform.position.z);
         float time = 0;
@@ -47,8 +49,8 @@ public class ObjectMovement : MonoBehaviour
             time += Time.deltaTime;
             yield return null;
         }
+
         transform.position = target;
         moveDown = true;
-        GameManager.Instance.isClick = false;
     }
 }

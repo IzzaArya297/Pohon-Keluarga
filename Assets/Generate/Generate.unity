@@ -497,6 +497,10 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 971346678, guid: 0b985083d809509489fe7405c6d65d8e, type: 3}
+      propertyPath: firstCard
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 6342524973845092644, guid: 0b985083d809509489fe7405c6d65d8e, type: 3}
       propertyPath: m_Name
       value: CharCard
@@ -1198,41 +1202,89 @@ MonoBehaviour:
   rambut_cowo:
   - bentuk: Lurus
     warna:
-    - {fileID: 0}
-    - {fileID: 0}
-    - {fileID: 0}
-    - {fileID: 0}
+    - depan: {fileID: 0}
+      belakang: {fileID: 0}
+      mid: {fileID: 0}
+    - depan: {fileID: 0}
+      belakang: {fileID: 0}
+      mid: {fileID: 0}
+    - depan: {fileID: 0}
+      belakang: {fileID: 0}
+      mid: {fileID: 0}
+    - depan: {fileID: 0}
+      belakang: {fileID: 0}
+      mid: {fileID: 0}
   - bentuk: Kriting
     warna:
-    - {fileID: 0}
-    - {fileID: 0}
-    - {fileID: 0}
-    - {fileID: 0}
+    - depan: {fileID: 0}
+      belakang: {fileID: 0}
+      mid: {fileID: 0}
+    - depan: {fileID: 0}
+      belakang: {fileID: 0}
+      mid: {fileID: 0}
+    - depan: {fileID: 0}
+      belakang: {fileID: 0}
+      mid: {fileID: 0}
+    - depan: {fileID: 0}
+      belakang: {fileID: 0}
+      mid: {fileID: 0}
   - bentuk: Gelombang
     warna:
-    - {fileID: 0}
-    - {fileID: 0}
-    - {fileID: 0}
-    - {fileID: 0}
+    - depan: {fileID: 0}
+      belakang: {fileID: 0}
+      mid: {fileID: 0}
+    - depan: {fileID: 0}
+      belakang: {fileID: 0}
+      mid: {fileID: 0}
+    - depan: {fileID: 0}
+      belakang: {fileID: 0}
+      mid: {fileID: 0}
+    - depan: {fileID: 0}
+      belakang: {fileID: 0}
+      mid: {fileID: 0}
   rambut_cewe:
   - bentuk: Lurus
     warna:
-    - {fileID: 0}
-    - {fileID: 0}
-    - {fileID: 0}
-    - {fileID: 0}
+    - depan: {fileID: 0}
+      belakang: {fileID: 0}
+      mid: {fileID: 0}
+    - depan: {fileID: 0}
+      belakang: {fileID: 0}
+      mid: {fileID: 0}
+    - depan: {fileID: 0}
+      belakang: {fileID: 0}
+      mid: {fileID: 0}
+    - depan: {fileID: 0}
+      belakang: {fileID: 0}
+      mid: {fileID: 0}
   - bentuk: Kriting
     warna:
-    - {fileID: 0}
-    - {fileID: 0}
-    - {fileID: 0}
-    - {fileID: 0}
+    - depan: {fileID: 0}
+      belakang: {fileID: 0}
+      mid: {fileID: 0}
+    - depan: {fileID: 0}
+      belakang: {fileID: 0}
+      mid: {fileID: 0}
+    - depan: {fileID: 0}
+      belakang: {fileID: 0}
+      mid: {fileID: 0}
+    - depan: {fileID: 0}
+      belakang: {fileID: 0}
+      mid: {fileID: 0}
   - bentuk: Gelombang
     warna:
-    - {fileID: 0}
-    - {fileID: 0}
-    - {fileID: 0}
-    - {fileID: 0}
+    - depan: {fileID: 0}
+      belakang: {fileID: 0}
+      mid: {fileID: 0}
+    - depan: {fileID: 0}
+      belakang: {fileID: 0}
+      mid: {fileID: 0}
+    - depan: {fileID: 0}
+      belakang: {fileID: 0}
+      mid: {fileID: 0}
+    - depan: {fileID: 0}
+      belakang: {fileID: 0}
+      mid: {fileID: 0}
   muka_kulit:
   - bentuk: Bulat
     warna:
@@ -1276,7 +1328,7 @@ MonoBehaviour:
   answerCard: {fileID: 7747477470567099831, guid: 83905a58b70c9d644820bec3df786bf3, type: 3}
   hirarkiOffset: {x: 2, y: -2.46, z: 0}
   parentPosOffset: {x: 4, y: 0, z: 0}
-  answerPosOffset: {x: 2, y: -5.05, z: 0}
+  answerPosOffset: {x: 2, y: -4.95, z: 0}
   chileChoiceOffset:
   - {x: 10, y: -5.05, z: 0}
   - {x: 10, y: -0.04999995, z: 0}

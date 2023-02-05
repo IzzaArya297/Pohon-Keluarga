@@ -8,6 +8,7 @@ public class ObjectMovement : MonoBehaviour
     public Vector3 offsetTargetPosition;
     public Vector3 offsetDown;
     public float duration;
+    public float duration_score_show;
     public bool moveDown = false;
     public BoxCollider2D collide;
     public bool isPartner = true;
@@ -29,20 +30,24 @@ public class ObjectMovement : MonoBehaviour
 
             if(CharSpawnTemp.charSpawn.mainCard.parentTraits == 5){
                 GameManager.Instance.score += (int)(1 * a_parameter);
+                StartCoroutine(GameManager.Instance.showImage(0, duration_score_show + duration));
                 Music.Instance.PlayAnswer(5);
                 Debug.Log("5T");
                 Timer.TimerInstance.gameTime += 5;
             }else if(CharSpawnTemp.charSpawn.mainCard.parentTraits == 4){
                 GameManager.Instance.score += (int)(0.5 * a_parameter);
+                StartCoroutine(GameManager.Instance.showImage(1, duration_score_show + duration));
                 Music.Instance.PlayAnswer(4);
                 Debug.Log("4T");
             }else if(CharSpawnTemp.charSpawn.mainCard.parentTraits == 3){
                 GameManager.Instance.score += (int)(0.25 * a_parameter);
+                StartCoroutine(GameManager.Instance.showImage(2, duration_score_show + duration));
                 Music.Instance.PlayAnswer(3);
                 Debug.Log("3T");
             }else{
                 Debug.Log("SALAH");
                 Music.Instance.PlayAnswer(2);
+                StartCoroutine(GameManager.Instance.showImage(3, duration_score_show + duration));
                 Timer.TimerInstance.gameTime -= penaltyTime;
             }
         }
@@ -73,5 +78,10 @@ public class ObjectMovement : MonoBehaviour
 
         transform.position = target;
         moveDown = true;
+        if(GameManager.Instance.isClick && moveDown)
+        {
+            yield return new WaitForSeconds(duration_score_show);
+            MoveDown();
+        }
     }
 }

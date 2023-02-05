@@ -23,7 +23,7 @@ public class Background : MonoBehaviour
         m_Renderer = GetComponent<Renderer>();
     }
 
-    bool spawn = false;
+    //bool spawn = false;
 
     // Update is called once per frame
     //void Update()

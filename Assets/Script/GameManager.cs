@@ -13,6 +13,9 @@ public class GameManager : MonoBehaviour
     public Text scoreText;
     public Text showScoreText;
     public GameObject gameOverPanel;
+
+    public GameObject[] scoreImage;
+
     private void Awake() 
     { 
         // If there is an instance, and it's not me, delete myself.
@@ -53,5 +56,12 @@ public class GameManager : MonoBehaviour
 
     public void LoadScene(int index){
         SceneManager.LoadScene(index);
+    }
+
+    public IEnumerator showImage(int score, float duration)
+    {
+        scoreImage[score].SetActive(true);
+        yield return new WaitForSeconds(duration);
+        scoreImage[score].SetActive(false);
     }
 }

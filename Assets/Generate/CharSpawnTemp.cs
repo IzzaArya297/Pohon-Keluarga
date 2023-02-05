@@ -128,6 +128,7 @@ public class CharSpawnTemp : MonoBehaviour
     public void GetMain(CharCard charCard)
     {
         charCard.charTraits = currentCharacter;
+        charCard.gender = gender;
     }
 
     public Sprite[] GetCharSprite(List<int> data=null, int _gender=-1)
@@ -137,8 +138,10 @@ public class CharSpawnTemp : MonoBehaviour
         if (data == null)
             data = currentCharacter;
         if (_gender == -1)
+        {
             _gender = gender;
-
+            Debug.Log(gender);
+        }
         if(_gender == Character.Cowo)
         {
             charSprite[0] = rambut_cowo[data[0]].warna[data[1]].depan;
@@ -199,13 +202,17 @@ public class CharSpawnTemp : MonoBehaviour
     {
         currentPartner = charGen.GeneratePartner(currentCharacter);
         charCard.charTraits = currentPartner;
-        return GetCharSprite(charGen.GeneratePartner(currentCharacter), gender == Character.Cowo ? Character.Cewe : Character.Cowo);
+        int _gender = (mainCard.gender == Character.Cowo ? Character.Cewe : Character.Cowo);
+        charCard.gender = _gender;
+        return GetCharSprite(currentPartner, _gender);
     }
 
     public Sprite[]  GetKidChar(CharCard charCard)
     {
         charCard.charTraits = charGen.GenerateKid(currentCharacter, currentPartner, charCard.parentTraits);
-        return GetCharSprite(charCard.charTraits, UnityEngine.Random.Range(0, 2));
+        int _gender = UnityEngine.Random.Range(0, 2);
+        charCard.gender = _gender;
+        return GetCharSprite(charCard.charTraits, _gender);
     }
 
     int[] Shuffle(int[] array)

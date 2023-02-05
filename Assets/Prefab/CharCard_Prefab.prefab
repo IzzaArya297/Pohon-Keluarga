@@ -58,7 +58,7 @@ Canvas:
   m_SortingBucketNormalizedSize: 0
   m_AdditionalShaderChannelsFlag: 0
   m_SortingLayerID: 0
-  m_SortingOrder: 50
+  m_SortingOrder: 73
   m_TargetDisplay: 0
 --- !u!114 &362711454
 MonoBehaviour:
@@ -935,6 +935,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   isPartner: 0
   charTraits: 
+  gender: 0
   sprite_rambut_depan: {fileID: 3468211578794392916}
   sprite_rambut_belakang: {fileID: 640115262}
   sprite_rambut_mid: {fileID: 7800654174892873834}

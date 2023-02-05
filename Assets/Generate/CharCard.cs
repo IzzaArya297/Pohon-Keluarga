@@ -9,7 +9,7 @@ public class CharCard : MonoBehaviour
     public bool isPartner = false;
 
     public List<int> charTraits;
-
+    public int gender;
     public SpriteRenderer sprite_rambut_depan = new SpriteRenderer();
     public SpriteRenderer sprite_rambut_belakang = new SpriteRenderer();
     public SpriteRenderer sprite_rambut_mid = new SpriteRenderer();
@@ -71,7 +71,7 @@ public class CharCard : MonoBehaviour
         {
             textTemp += i.ToString() + ", ";
         }
-
+        textTemp += "= " + parentTraits;
         traitsText.text = textTemp;
 
         if (sprite_rambut_mid.sprite == null)

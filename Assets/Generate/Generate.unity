@@ -464,121 +464,161 @@ MonoBehaviour:
   rambut_cowo:
   - bentuk: Lurus
     warna:
-    - depan: {fileID: 0}
-      belakang: {fileID: 0}
+    - depan: {fileID: 21300000, guid: 8be1828f8708b0149a86d4b82db110ff, type: 3}
+      belakang: {fileID: 21300000, guid: 847de5fa97c91a048a4ee0b5ce1cdbd5, type: 3}
       mid: {fileID: 0}
-    - depan: {fileID: 0}
-      belakang: {fileID: 0}
+    - depan: {fileID: 21300000, guid: 3e4d806280c879249a555c7aa3eefcc0, type: 3}
+      belakang: {fileID: 21300000, guid: 1d6d0b31c3d75f948bc00f96b259532b, type: 3}
       mid: {fileID: 0}
-    - depan: {fileID: 0}
-      belakang: {fileID: 0}
+    - depan: {fileID: 21300000, guid: 92778f367352fb642a4fe8059c948dc8, type: 3}
+      belakang: {fileID: 21300000, guid: 53624a3f00231b44582cff7cf046a360, type: 3}
       mid: {fileID: 0}
-    - depan: {fileID: 0}
-      belakang: {fileID: 0}
+    - depan: {fileID: 21300000, guid: 1fb90865f3a8a49449d1892dacaef062, type: 3}
+      belakang: {fileID: 21300000, guid: b2d83d1adf04c2b4387006bb947de387, type: 3}
       mid: {fileID: 0}
   - bentuk: Kriting
     warna:
-    - depan: {fileID: 0}
-      belakang: {fileID: 0}
+    - depan: {fileID: 21300000, guid: 1441e30e82040ac40ae05d9276d7f8d6, type: 3}
+      belakang: {fileID: 21300000, guid: 459b6917f3c68024a8b0552c522f0954, type: 3}
       mid: {fileID: 0}
-    - depan: {fileID: 0}
-      belakang: {fileID: 0}
+    - depan: {fileID: 21300000, guid: 28170d14fef0c1448ba928d030d6d1f7, type: 3}
+      belakang: {fileID: 21300000, guid: 653128f6dc2f6cd4593b266267de028f, type: 3}
       mid: {fileID: 0}
-    - depan: {fileID: 0}
-      belakang: {fileID: 0}
+    - depan: {fileID: 21300000, guid: eafe5ceaae373f943a0bb2e290d774c5, type: 3}
+      belakang: {fileID: 21300000, guid: ee363418bd58ed845bdbc1cc0613ef45, type: 3}
       mid: {fileID: 0}
-    - depan: {fileID: 0}
-      belakang: {fileID: 0}
+    - depan: {fileID: 21300000, guid: 77be04c278313e241bf5ba0f5c6639bc, type: 3}
+      belakang: {fileID: 21300000, guid: e87ef61b02053684d84e92c3860d4c72, type: 3}
       mid: {fileID: 0}
   - bentuk: Gelombang
     warna:
-    - depan: {fileID: 0}
-      belakang: {fileID: 0}
+    - depan: {fileID: 21300000, guid: fb8cfc22d9e20ed4a9f47774d152ccbf, type: 3}
+      belakang: {fileID: 21300000, guid: 508cb4c53aff9c040a76f8a7c75ed65a, type: 3}
       mid: {fileID: 0}
-    - depan: {fileID: 0}
-      belakang: {fileID: 0}
+    - depan: {fileID: 21300000, guid: 01d9da8e2fed36747a4330df6001b239, type: 3}
+      belakang: {fileID: 21300000, guid: 97eb87f40d6389e43bec3baa0ff5f337, type: 3}
       mid: {fileID: 0}
-    - depan: {fileID: 0}
-      belakang: {fileID: 0}
+    - depan: {fileID: 21300000, guid: dafacb81e51d6924e93bf9f8e5ab2352, type: 3}
+      belakang: {fileID: 21300000, guid: fc45f46944ad3a64da9c7d99d6ee9fe8, type: 3}
       mid: {fileID: 0}
-    - depan: {fileID: 0}
-      belakang: {fileID: 0}
+    - depan: {fileID: 21300000, guid: 6edd979c03c66a84b847a5400cd1d283, type: 3}
+      belakang: {fileID: 21300000, guid: 24918a2319550dc4dad235f872e12a5b, type: 3}
       mid: {fileID: 0}
   rambut_cewe:
   - bentuk: Lurus
     warna:
-    - depan: {fileID: 0}
-      belakang: {fileID: 0}
+    - depan: {fileID: 21300000, guid: ffff700ddbd482d4196eef345f8c396e, type: 3}
+      belakang: {fileID: 21300000, guid: 53e297c75103b55408957863ba5715c9, type: 3}
       mid: {fileID: 0}
-    - depan: {fileID: 0}
-      belakang: {fileID: 0}
+    - depan: {fileID: 21300000, guid: adf4552c2e8d4354c8326c86e2fad9f4, type: 3}
+      belakang: {fileID: 21300000, guid: 4d3f89ad6f3325544ad8810df484029e, type: 3}
       mid: {fileID: 0}
-    - depan: {fileID: 0}
-      belakang: {fileID: 0}
+    - depan: {fileID: 21300000, guid: 6879d6d22d495d84bb8c27c958655abc, type: 3}
+      belakang: {fileID: 21300000, guid: 5291947fe21dea948912b3c35e49dce4, type: 3}
       mid: {fileID: 0}
-    - depan: {fileID: 0}
-      belakang: {fileID: 0}
+    - depan: {fileID: 21300000, guid: 5b1220ed06eec2144b82b676d7b637c8, type: 3}
+      belakang: {fileID: 21300000, guid: a3b572614e9d52645b7fc693f9c21740, type: 3}
       mid: {fileID: 0}
   - bentuk: Kriting
     warna:
-    - depan: {fileID: 0}
-      belakang: {fileID: 0}
+    - depan: {fileID: 21300000, guid: b50b40b7a6e1e3848990bec94894906a, type: 3}
+      belakang: {fileID: 21300000, guid: 53e36e7244f93634588aa7e03f06569b, type: 3}
       mid: {fileID: 0}
-    - depan: {fileID: 0}
-      belakang: {fileID: 0}
+    - depan: {fileID: 21300000, guid: 66433f5b7749f644394f0e7dfd67d9d1, type: 3}
+      belakang: {fileID: 21300000, guid: be2b03e56b41a0d44b937b664604cb87, type: 3}
       mid: {fileID: 0}
-    - depan: {fileID: 0}
-      belakang: {fileID: 0}
+    - depan: {fileID: 21300000, guid: ba84994b308560d4693524557e67496b, type: 3}
+      belakang: {fileID: 21300000, guid: b29d36b11fbfbd741b9b71461afcb20c, type: 3}
       mid: {fileID: 0}
-    - depan: {fileID: 0}
-      belakang: {fileID: 0}
+    - depan: {fileID: 21300000, guid: 1fa8a60be17417548b49e5d2a106582b, type: 3}
+      belakang: {fileID: 21300000, guid: ccde2a515931bac4d95817bd0088e421, type: 3}
       mid: {fileID: 0}
   - bentuk: Gelombang
     warna:
-    - depan: {fileID: 0}
-      belakang: {fileID: 0}
-      mid: {fileID: 0}
-    - depan: {fileID: 0}
-      belakang: {fileID: 0}
-      mid: {fileID: 0}
-    - depan: {fileID: 0}
-      belakang: {fileID: 0}
-      mid: {fileID: 0}
-    - depan: {fileID: 0}
-      belakang: {fileID: 0}
-      mid: {fileID: 0}
-  muka_kulit:
-  - bentuk: Bulat
-    warna:
-    - {fileID: 0}
-    - {fileID: 0}
-    - {fileID: 0}
-    - {fileID: 0}
-    - {fileID: 0}
+    - depan: {fileID: 21300000, guid: d506c933ba258b34a9b276f32123bfbb, type: 3}
+      belakang: {fileID: 21300000, guid: 283e255b03ae83d49a65f9e2d60d1467, type: 3}
+      mid: {fileID: 21300000, guid: 5ccfe84e476384a4f8dbbdebd798419e, type: 3}
+    - depan: {fileID: 21300000, guid: afc4f2e92a8911844aab860b6f566c61, type: 3}
+      belakang: {fileID: 21300000, guid: 2d19bc7d7f1e6f24483ad95d99e55c50, type: 3}
+      mid: {fileID: 21300000, guid: da17066b71697a44a97b6c25edbffac8, type: 3}
+    - depan: {fileID: 21300000, guid: 44194230c0d21b7419ba98eb12d4954e, type: 3}
+      belakang: {fileID: 21300000, guid: a5a3f515fad415c4c81fa2acae3518d3, type: 3}
+      mid: {fileID: 21300000, guid: 0d1a0a18cd84841408fefefaad2cb7b9, type: 3}
+    - depan: {fileID: 21300000, guid: 7fb4efcd6ac76c149ad453f88bebb08c, type: 3}
+      belakang: {fileID: 21300000, guid: ef58b6b5a13fc83439a8f37e4112dbc2, type: 3}
+      mid: {fileID: 21300000, guid: 96bce74716a90cf41b702197bfc1db4f, type: 3}
+  muka_kulit_cowo:
   - bentuk: Oval
     warna:
-    - {fileID: 0}
-    - {fileID: 0}
-    - {fileID: 0}
-    - {fileID: 0}
-    - {fileID: 0}
-  - bentuk: Kotak
+    - {fileID: 21300000, guid: 983861ad2ab2f254ca0264efe63a92d9, type: 3}
+    - {fileID: 21300000, guid: 2c3e2b4db783fcd4884be4ebe354fc4d, type: 3}
+    - {fileID: 21300000, guid: 395c391ef0493684d90f4c51c496631a, type: 3}
+    - {fileID: 21300000, guid: 1770cf337087f1344bac97be4f40c0b6, type: 3}
+    - {fileID: 21300000, guid: 936ac9feb4c585f408bedc27ce4aea13, type: 3}
+  - bentuk: Round
     warna:
-    - {fileID: 0}
-    - {fileID: 0}
-    - {fileID: 0}
-    - {fileID: 0}
-    - {fileID: 0}
-  bentuk_mata:
-  - {fileID: -2413806693520163455, guid: bdfdc0eb1003b274fb2b1b53187f908c, type: 3}
-  - {fileID: 2747690628134850419, guid: 2fe7634df66d9134385d96f9da3d9aa6, type: 3}
-  - {fileID: -9095717837082945937, guid: f360b6666b5c05e499ce3a35c321ea5b, type: 3}
-  baju_cowo:
-  - {fileID: 0}
-  - {fileID: 0}
-  baju_cewe:
-  - {fileID: 0}
-  - {fileID: 0}
+    - {fileID: 21300000, guid: 4df625024fbab93489991efb4e2e89a6, type: 3}
+    - {fileID: 21300000, guid: 017c880b041466841b1b9b905de36831, type: 3}
+    - {fileID: 21300000, guid: 3364685c4cd85ca42a07ac8e2d8e8ef0, type: 3}
+    - {fileID: 21300000, guid: 3807338fea642dd4784c6e061c49d1b6, type: 3}
+    - {fileID: 21300000, guid: 63905f56fc49f354b8543d3bd8efb414, type: 3}
+  - bentuk: Square
+    warna:
+    - {fileID: 21300000, guid: ebb4e63db23762a4895d8b7138fb41e3, type: 3}
+    - {fileID: 21300000, guid: 9d53ee2db37976b4a9c7c8c37c00028b, type: 3}
+    - {fileID: 21300000, guid: 89f21be42e5788144958ebc906c08968, type: 3}
+    - {fileID: 21300000, guid: 14c48a9dae186f649887afc5a2dff62b, type: 3}
+    - {fileID: 21300000, guid: b216f5137932da74cbe7438696911c8b, type: 3}
+  muka_kulit_cewe:
+  - bentuk: Oval
+    warna:
+    - {fileID: 21300000, guid: f3c827d8e35610c45b808f8b788c6271, type: 3}
+    - {fileID: 21300000, guid: 4e08a25e19f387045bcde80cbd208731, type: 3}
+    - {fileID: 21300000, guid: 04aa1cf94bd2f9e45a049c49ae6a633d, type: 3}
+    - {fileID: 21300000, guid: c1c2b87878d78e147a1d505a7abad127, type: 3}
+    - {fileID: 21300000, guid: dcac245ad75d0cd4ca63baf4b5cadb28, type: 3}
+  - bentuk: Round
+    warna:
+    - {fileID: 21300000, guid: 62c3d93b71082e041bf96dd2ccc54edb, type: 3}
+    - {fileID: 21300000, guid: de80a28d444a158469857322cf8e33ee, type: 3}
+    - {fileID: 21300000, guid: f0f892e6e08eef74580d431566e722d7, type: 3}
+    - {fileID: 21300000, guid: 15de8fcdbbe49fd4d98de4257fc9da4e, type: 3}
+    - {fileID: 21300000, guid: 2c858fecf66dce94baadc556b6f26221, type: 3}
+  - bentuk: Square
+    warna:
+    - {fileID: 21300000, guid: 78dcbd4b0cff4fc468f311e3bf881d3f, type: 3}
+    - {fileID: 21300000, guid: c443329b4ff158f4787328846a0c9b33, type: 3}
+    - {fileID: 21300000, guid: f368d3c69e00dc44eb3fc8357c66c09e, type: 3}
+    - {fileID: 21300000, guid: c2f33c0c9cadedd41adbe3deba8d9f5f, type: 3}
+    - {fileID: 21300000, guid: d1f6280810ad3a84487c1d8a4a969b10, type: 3}
+  ears:
+  - {fileID: 21300000, guid: c9f4cae8327054048966cb9ae373abbf, type: 3}
+  - {fileID: 21300000, guid: 2340f95e469663d4b8991a0b875d8891, type: 3}
+  - {fileID: 21300000, guid: 7050289d21b92e042a8c840a8512c7b5, type: 3}
+  - {fileID: 21300000, guid: 26ce984e83b050940a32742e28633ab1, type: 3}
+  - {fileID: 21300000, guid: 742631f77365f414e9c698601154c0b0, type: 3}
+  bentuk_mata_cowo:
+  - {fileID: 21300000, guid: d3ff05f57a9c26d4587a1dbf34d959c8, type: 3}
+  - {fileID: 21300000, guid: 419cb0cdc02bef7499bb90c5324b565d, type: 3}
+  - {fileID: 21300000, guid: c350d701da6b5d442b3140e27f4a6129, type: 3}
+  - {fileID: 21300000, guid: bb99146b722c57d45a96f8e971022da0, type: 3}
+  bentuk_mata_cewe:
+  - {fileID: 21300000, guid: a39b04fbfaabbdf419e98b2c1655858e, type: 3}
+  - {fileID: 21300000, guid: 5d5426e0aada44e44ad023ddb98dbb4c, type: 3}
+  - {fileID: 21300000, guid: 3df929f29d9b51a48987eaf9ed9f0fdb, type: 3}
+  - {fileID: 21300000, guid: a559f267b56f72b408de365b73229dd8, type: 3}
+  badan_cowo:
+  - {fileID: 21300000, guid: f5c2c2ab598ca374b8234e9bbcd2179b, type: 3}
+  - {fileID: 21300000, guid: 8f99cd89212ceaa448fa7678e433ff7b, type: 3}
+  - {fileID: 21300000, guid: 7e4b1dccf5fb7514082829530518682f, type: 3}
+  - {fileID: 21300000, guid: 6ee433a981111134693915c4a35f2b9b, type: 3}
+  - {fileID: 21300000, guid: fa803dfd206bd5c4bbe166929832a855, type: 3}
+  badan_cewe:
+  - {fileID: 21300000, guid: f49fd07cb8db64f4390ef05cbc15efdc, type: 3}
+  - {fileID: 21300000, guid: 7fe4257d1c23cb547b47a283224c46df, type: 3}
+  - {fileID: 21300000, guid: 6528b9e046db7e04f948acbff84df7d5, type: 3}
+  - {fileID: 21300000, guid: 849b2440c832aff4b896cdebb15617b3, type: 3}
+  - {fileID: 21300000, guid: 4644ad9c729186143a2c431077a55159, type: 3}
   currentCharacter: 
   currentPartner: 
   cardChild: []
@@ -814,7 +854,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 0}
   m_Children: []
   m_Father: {fileID: 1410728604}
-  m_RootOrder: 4
+  m_RootOrder: 5
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!212 &379924774
 SpriteRenderer:
@@ -980,6 +1020,105 @@ Animator:
   m_HasTransformHierarchy: 1
   m_AllowConstantClipSamplingOptimization: 1
   m_KeepAnimatorControllerStateOnDisable: 0
+--- !u!1 &630628782
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 630628783}
+  - component: {fileID: 630628785}
+  - component: {fileID: 630628784}
+  m_Layer: 0
+  m_Name: Background (2)
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &630628783
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 630628782}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: -0.0371, y: -54.53, z: 0.35}
+  m_LocalScale: {x: 1.1221251, y: 1.1221251, z: 1.1221251}
+  m_Children: []
+  m_Father: {fileID: 1410728604}
+  m_RootOrder: 3
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &630628784
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 630628782}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 966c43f34964ab042b7fe932887baf21, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  width: 14.22
+  height: 0
+  speed: 0.007
+  moveRight: 1
+--- !u!212 &630628785
+SpriteRenderer:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 630628782}
+  m_Enabled: 1
+  m_CastShadows: 0
+  m_ReceiveShadows: 0
+  m_DynamicOccludee: 1
+  m_MotionVectors: 1
+  m_LightProbeUsage: 1
+  m_ReflectionProbeUsage: 1
+  m_RayTracingMode: 0
+  m_RayTraceProcedural: 0
+  m_RenderingLayerMask: 1
+  m_RendererPriority: 0
+  m_Materials:
+  - {fileID: 10754, guid: 0000000000000000f000000000000000, type: 0}
+  m_StaticBatchInfo:
+    firstSubMesh: 0
+    subMeshCount: 0
+  m_StaticBatchRoot: {fileID: 0}
+  m_ProbeAnchor: {fileID: 0}
+  m_LightProbeVolumeOverride: {fileID: 0}
+  m_ScaleInLightmap: 1
+  m_ReceiveGI: 1
+  m_PreserveUVs: 0
+  m_IgnoreNormalsForChartDetection: 0
+  m_ImportantGI: 0
+  m_StitchLightmapSeams: 1
+  m_SelectedEditorRenderState: 0
+  m_MinimumChartSize: 4
+  m_AutoUVMaxDistance: 0.5
+  m_AutoUVMaxAngle: 89
+  m_LightmapParameters: {fileID: 0}
+  m_SortingLayerID: 0
+  m_SortingLayer: 0
+  m_SortingOrder: -5
+  m_Sprite: {fileID: 21300000, guid: c5cbc5040f70e44468becaf596973d04, type: 3}
+  m_Color: {r: 1, g: 1, b: 1, a: 1}
+  m_FlipX: 0
+  m_FlipY: 0
+  m_DrawMode: 0
+  m_Size: {x: 19.199999, y: 21.605274}
+  m_AdaptiveModeThreshold: 0.5
+  m_SpriteTileMode: 0
+  m_WasSpriteAssigned: 1
+  m_MaskInteraction: 0
+  m_SpriteSortPoint: 0
 --- !u!1 &645513661
 GameObject:
   m_ObjectHideFlags: 0
@@ -1352,7 +1491,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 0}
   m_Children: []
   m_Father: {fileID: 1410728604}
-  m_RootOrder: 6
+  m_RootOrder: 7
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!212 &901364798
 SpriteRenderer:
@@ -1926,7 +2065,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 0}
   m_Children: []
   m_Father: {fileID: 1410728604}
-  m_RootOrder: 3
+  m_RootOrder: 4
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!212 &1199559780
 SpriteRenderer:
@@ -7095,6 +7234,7 @@ Transform:
   - {fileID: 296689500}
   - {fileID: 1147501556}
   - {fileID: 62057509}
+  - {fileID: 630628783}
   - {fileID: 1199559779}
   - {fileID: 379924773}
   - {fileID: 1983004485}
@@ -7715,7 +7855,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 0}
   m_Children: []
   m_Father: {fileID: 1410728604}
-  m_RootOrder: 5
+  m_RootOrder: 6
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!212 &1983004486
 SpriteRenderer:
@@ -7775,6 +7915,10 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 362711455, guid: 0b985083d809509489fe7405c6d65d8e, type: 3}
+      propertyPath: m_Camera
+      value: 
+      objectReference: {fileID: 1410728601}
     - target: {fileID: 971346678, guid: 0b985083d809509489fe7405c6d65d8e, type: 3}
       propertyPath: firstCard
       value: 1

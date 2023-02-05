@@ -37,11 +37,14 @@ public class CharSpawnTemp : MonoBehaviour
 
     public bentuk_warna_rambut[] rambut_cowo;
     public bentuk_warna_rambut[] rambut_cewe;
-    public bentuk_warna[] muka_kulit;
+    public bentuk_warna[] muka_kulit_cowo;
+    public bentuk_warna[] muka_kulit_cewe;
+    public List<Sprite> ears;
 
-    public List<Sprite> bentuk_mata = new List<Sprite>();
-    public List<Sprite> baju_cowo = new List<Sprite>();
-    public List<Sprite> baju_cewe = new List<Sprite>();
+    public List<Sprite> bentuk_mata_cowo = new List<Sprite>();
+    public List<Sprite> bentuk_mata_cewe = new List<Sprite>();
+    public List<Sprite> badan_cowo = new List<Sprite>();
+    public List<Sprite> badan_cewe = new List<Sprite>();
 
     public List<int> currentCharacter = new List<int>();
     public List<int> currentPartner = new List<int>();
@@ -122,32 +125,41 @@ public class CharSpawnTemp : MonoBehaviour
         }
     }
 
+    public void GetMain(CharCard charCard)
+    {
+        charCard.charTraits = currentCharacter;
+    }
+
     public Sprite[] GetCharSprite(List<int> data=null, int _gender=-1)
     {
-        Sprite[] charSprite = new Sprite[4];
+        Sprite[] charSprite = new Sprite[7];
 
         if (data == null)
             data = currentCharacter;
         if (_gender == -1)
             _gender = gender;
 
-        if(gender == Character.Cowo)
+        if(_gender == Character.Cowo)
         {
             charSprite[0] = rambut_cowo[data[0]].warna[data[1]].depan;
             charSprite[1] = rambut_cowo[data[0]].warna[data[1]].belakang;
             charSprite[2] = rambut_cowo[data[0]].warna[data[1]].mid;
-            charSprite[3] = baju_cowo[UnityEngine.Random.Range(0, baju_cowo.Count)];
+            charSprite[3] = badan_cowo[data[2]];
+            charSprite[4] = muka_kulit_cowo[data[3]].warna[data[2]];
+            charSprite[5] = bentuk_mata_cowo[data[4]];
+            charSprite[6] = ears[data[2]];
         }
         else
         {
             charSprite[0] = rambut_cewe[data[0]].warna[data[1]].depan;
             charSprite[1] = rambut_cewe[data[0]].warna[data[1]].belakang;
             charSprite[2] = rambut_cewe[data[0]].warna[data[1]].mid;
-            charSprite[3] = baju_cewe[UnityEngine.Random.Range(0, baju_cewe.Count)];
+            charSprite[3] = badan_cewe[data[2]];
+            charSprite[4] = muka_kulit_cewe[data[3]].warna[data[2]];
+            charSprite[5] = bentuk_mata_cewe[data[4]];
+            charSprite[6] = ears[data[2]];
         }
 
-        charSprite[4] = muka_kulit[data[3]].warna[data[2]];
-        charSprite[5] = bentuk_mata[data[4]];
 
         return charSprite;
     }
@@ -183,9 +195,10 @@ public class CharSpawnTemp : MonoBehaviour
         }
     }
 
-    public Sprite[] GetPartner()
+    public Sprite[] GetPartner(CharCard charCard)
     {
         currentPartner = charGen.GeneratePartner(currentCharacter);
+        charCard.charTraits = currentPartner;
         return GetCharSprite(charGen.GeneratePartner(currentCharacter), gender == Character.Cowo ? Character.Cewe : Character.Cowo);
     }
 

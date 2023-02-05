@@ -1,6 +1,7 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.UI;
 
 public class CharCard : MonoBehaviour
 {
@@ -17,17 +18,17 @@ public class CharCard : MonoBehaviour
     public SpriteRenderer sprite_baju = new SpriteRenderer();
     public SpriteRenderer sprite_kuping = new SpriteRenderer();
 
+    public Text traitsText;
+
     public int parentTraits = 0;
 
     public bool firstCard = false;
-
-    CharSpawnTemp charSpawn = CharSpawnTemp.charSpawn;
 
 
     // Start is called before the first frame update
     void Start()
     {
-        //FillSprite();
+        FillSprite();
     }
 
     // Update is called once per frame
@@ -38,21 +39,23 @@ public class CharCard : MonoBehaviour
 
     public void FillSprite()
     {
-        Sprite[] spriteList = new Sprite[6];
+        Sprite[] spriteList = new Sprite[7];
 
         if (firstCard)
         {
-            spriteList = charSpawn.GetCharSprite();
+            Debug.Log("aa");
+            spriteList = CharSpawnTemp.charSpawn.GetCharSprite();
+            CharSpawnTemp.charSpawn.GetMain(this);
         }
 
         else if (isPartner)
         {
-            spriteList = charSpawn.GetPartner();
+            spriteList = CharSpawnTemp.charSpawn.GetPartner(this);
         }
 
         else
         {
-            spriteList = charSpawn.GetKidChar(GetComponent<CharCard>());
+            spriteList = CharSpawnTemp.charSpawn.GetKidChar(GetComponent<CharCard>());
         }
 
         sprite_rambut_depan.sprite = spriteList[0];
@@ -61,8 +64,17 @@ public class CharCard : MonoBehaviour
         sprite_baju.sprite = spriteList[3];
         sprite_kulit.sprite = spriteList[4];
         sprite_mata.sprite = spriteList[5];
+        sprite_kuping.sprite = spriteList[6];
 
-        if(sprite_rambut_mid.sprite == null)
+        string textTemp = "";
+        foreach (int i in charTraits)
+        {
+            textTemp += i.ToString() + ", ";
+        }
+
+        traitsText.text = textTemp;
+
+        if (sprite_rambut_mid.sprite == null)
         {
             return;
         }
@@ -74,6 +86,7 @@ public class CharCard : MonoBehaviour
         {
             sprite_rambut_mid.sortingOrder = sprite_kuping.sortingOrder - 1;
         }
+
     }
 
     public void sortingFix(int added)

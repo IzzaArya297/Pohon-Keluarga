@@ -462,7 +462,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_Material: {fileID: 0}
-  m_Color: {r: 0.19607843, g: 0.19607843, b: 0.19607843, a: 1}
+  m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_RaycastTarget: 1
   m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
   m_Maskable: 1
@@ -470,9 +470,9 @@ MonoBehaviour:
     m_PersistentCalls:
       m_Calls: []
   m_FontData:
-    m_Font: {fileID: 10102, guid: 0000000000000000e000000000000000, type: 0}
-    m_FontSize: 27
-    m_FontStyle: 0
+    m_Font: {fileID: 12800000, guid: d61003d4f30818a47af2708d5451d3a3, type: 3}
+    m_FontSize: 67
+    m_FontStyle: 1
     m_BestFit: 0
     m_MinSize: 0
     m_MaxSize: 288
@@ -500,15 +500,15 @@ RectTransform:
   m_GameObject: {fileID: 311303252}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 2, y: 2, z: 2}
+  m_LocalScale: {x: 0.6, y: 0.6, z: 0.6}
   m_Children: []
   m_Father: {fileID: 870187335}
   m_RootOrder: 3
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 1, y: 1}
-  m_AnchoredPosition: {x: 0, y: -290.4}
-  m_SizeDelta: {x: -1760, y: -1049.2}
+  m_AnchoredPosition: {x: 0, y: -286}
+  m_SizeDelta: {x: -1760, y: -988.121}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!1 &537340033
 GameObject:
@@ -862,7 +862,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!224 &933798115
 RectTransform:
   m_ObjectHideFlags: 0
@@ -920,15 +920,15 @@ RectTransform:
   m_GameObject: {fileID: 949373070}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 3.4479, y: 3.4479, z: 3.4479}
+  m_LocalScale: {x: 0.6, y: 0.6, z: 3.4479}
   m_Children: []
   m_Father: {fileID: 933798115}
   m_RootOrder: 2
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 0, y: 0}
-  m_SizeDelta: {x: 160, y: 30}
+  m_AnchoredPosition: {x: 0.0029726, y: 1.6545}
+  m_SizeDelta: {x: 1575, y: 757.9758}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &949373072
 MonoBehaviour:
@@ -943,7 +943,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_Material: {fileID: 0}
-  m_Color: {r: 0.19607843, g: 0.19607843, b: 0.19607843, a: 1}
+  m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_RaycastTarget: 1
   m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
   m_Maskable: 1
@@ -951,19 +951,22 @@ MonoBehaviour:
     m_PersistentCalls:
       m_Calls: []
   m_FontData:
-    m_Font: {fileID: 10102, guid: 0000000000000000e000000000000000, type: 0}
-    m_FontSize: 14
+    m_Font: {fileID: 12800000, guid: 9a1b1e6a8b29dac4cb86f1c02cf96a29, type: 3}
+    m_FontSize: 49
     m_FontStyle: 0
     m_BestFit: 0
     m_MinSize: 10
-    m_MaxSize: 40
+    m_MaxSize: 220
     m_Alignment: 0
     m_AlignByGeometry: 0
     m_RichText: 1
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: TES TES TES
+  m_Text: "A submission for Global Game Jam 2023.\n\n<b>Author :</b>\nMuhammad Azriel
+    W <i>as Game Programmer </i>\nRakha Muhammad A <i>as Game Programmer </i>\t \nWildan
+    Dhiya'ul H U <i>as 2D Game Artist </i>\t\nMuhammad Izza A N <i>as Game Designer
+    </i>\n\n<b>Credits :</b>\nBGM and SFX : https://devdogg.itch.io/pedal-point\n"
 --- !u!222 &949373073
 CanvasRenderer:
   m_ObjectHideFlags: 0

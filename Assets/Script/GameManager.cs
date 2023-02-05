@@ -41,6 +41,10 @@ public class GameManager : MonoBehaviour
         Time.timeScale = 0;
         gameOverPanel.SetActive(true);
         showScoreText.text = scoreText.text;
+        if(score > PlayerPrefs.GetInt("highScore")){
+            PlayerPrefs.SetInt("highScore", score);
+        }
+        
     }
 
     public void Retry(){

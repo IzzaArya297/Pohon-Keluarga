@@ -53,9 +53,16 @@ public class Timer : MonoBehaviour
     }
 
     IEnumerator timer(){
-            float time = gameTime - Time.time;
+            Debug.Log("IE timer");
+
+            // float time = gameTime - Time.time;
+            float sum=0;
+            float time = gameTime;
+            Debug.Log("game time : " + gameTime);
+            Debug.Log("time : " + time);
             while(time > 0){
-            time = gameTime - Time.time;
+            time = gameTime-sum;
+            sum += Time.deltaTime;
 
             int minutes = Mathf.FloorToInt(time/60);
             int seconds = Mathf.FloorToInt(time - minutes * 60);

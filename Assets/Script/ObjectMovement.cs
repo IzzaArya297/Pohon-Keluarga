@@ -33,7 +33,8 @@ public class ObjectMovement : MonoBehaviour
                 StartCoroutine(GameManager.Instance.showImage(0, duration_score_show + duration));
                 Music.Instance.PlayAnswer(5);
                 Debug.Log("5T");
-                Timer.TimerInstance.gameTime += 5;
+                Timer.TimerInstance.sum = Timer.TimerInstance.sum - 5 < 0 ? 0 : Timer.TimerInstance.sum - 5;
+                Music.Instance.timer = Music.Instance.timer - 5 < 0? 0 : Music.Instance.timer - 5;
             }else if(CharSpawnTemp.charSpawn.mainCard.parentTraits == 4){
                 GameManager.Instance.score += (int)(0.5 * a_parameter);
                 StartCoroutine(GameManager.Instance.showImage(1, duration_score_show + duration));
@@ -48,7 +49,8 @@ public class ObjectMovement : MonoBehaviour
                 Debug.Log("SALAH");
                 Music.Instance.PlayAnswer(2);
                 StartCoroutine(GameManager.Instance.showImage(3, duration_score_show + duration));
-                Timer.TimerInstance.gameTime -= penaltyTime;
+                Timer.TimerInstance.sum += penaltyTime;
+                Music.Instance.timer += penaltyTime;
             }
         }
     }

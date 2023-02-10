@@ -11,6 +11,8 @@ public class Timer : MonoBehaviour
     public GameObject pausePanel;
     public bool isPause;
 
+    private float time;
+    public float sum = 0;
     private bool stopTimer;
     // Start is called before the first frame update
     private void Awake() 
@@ -56,8 +58,7 @@ public class Timer : MonoBehaviour
             Debug.Log("IE timer");
 
             // float time = gameTime - Time.time;
-            float sum=0;
-            float time = gameTime;
+            time = gameTime;
             Debug.Log("game time : " + gameTime);
             Debug.Log("time : " + time);
             while(time > 0){
